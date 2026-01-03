@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Youtube, Github } from "lucide-react";
+import amanexLogo from "@/assets/amanex-logo.png";
 
 const footerLinks = {
   services: [
@@ -44,8 +45,8 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2">
-              <span className="font-display text-2xl font-bold">Amanex</span>
+            <Link to="/" className="flex items-center">
+              <img src={amanexLogo} alt="Amanex Solutions" className="h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/70">
               Transforming enterprises through technology excellence and innovation.

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+import amanexLogo from "@/assets/amanex-logo.png";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -38,8 +39,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container-custom flex h-16 items-center justify-between lg:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold text-foreground">Amanex</span>
+        <Link to="/" className="flex items-center">
+          <img src={amanexLogo} alt="Amanex Solutions" className="h-12 w-auto lg:h-14" />
         </Link>
 
         {/* Desktop Navigation */}
