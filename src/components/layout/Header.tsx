@@ -39,10 +39,7 @@ export function Header() {
       <nav className="container-custom flex h-16 items-center justify-between lg:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent">
-            <span className="font-display text-xl font-bold text-accent-foreground">N</span>
-          </div>
-          <span className="font-display text-xl font-bold text-foreground">NexaTech</span>
+          <span className="font-display text-2xl font-bold text-foreground">Amanex</span>
         </Link>
 
         {/* Desktop Navigation */}

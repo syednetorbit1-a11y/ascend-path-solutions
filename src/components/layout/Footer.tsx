@@ -45,10 +45,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent">
-                <span className="font-display text-xl font-bold text-accent-foreground">N</span>
-              </div>
-              <span className="font-display text-xl font-bold">NexaTech</span>
+              <span className="font-display text-2xl font-bold">Amanex</span>
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/70">
               Transforming enterprises through technology excellence and innovation.
@@ -147,7 +144,7 @@ export function Footer() {
         <div className="mt-16 border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-primary-foreground/60">
-              © {new Date().getFullYear()} NexaTech Consulting. All rights reserved.
+              © {new Date().getFullYear()} Amanex Consulting. All rights reserved.
             </p>
             <p className="text-sm text-primary-foreground/60">
               Built with trust, driven by innovation.
