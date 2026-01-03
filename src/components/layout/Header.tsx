@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import amanexLogo from "@/assets/amanex-logo.png";
+import amanexLogo from "@/assets/amanex-logo-transparent.png";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,

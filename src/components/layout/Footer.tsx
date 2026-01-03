@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Youtube, Github } from "lucide-react";
-import amanexLogo from "@/assets/amanex-logo.png";
+import amanexLogo from "@/assets/amanex-logo-transparent.png";
 
 const footerLinks = {
   services: [

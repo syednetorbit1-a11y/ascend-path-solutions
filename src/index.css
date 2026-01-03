@@ -40,6 +40,12 @@
     --teal: 168 65% 40%;
     --teal-light: 168 60% 50%;
     --teal-dark: 168 70% 30%;
+
+    /* Backwards-compatible tokens (used by button variants) */
+    --coral: 168 65% 40%;
+    --coral-light: 168 60% 50%;
+    --coral-dark: 168 70% 30%;
+
     --navy: 222 47% 15%;
     --navy-light: 222 40% 25%;
     --navy-dark: 222 55% 10%;
