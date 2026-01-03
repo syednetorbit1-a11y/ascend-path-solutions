@@ -40,7 +40,7 @@ export function Header() {
       <nav className="container-custom flex h-16 items-center justify-between lg:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={amanexLogo} alt="Amanex Solutions" className="h-16 w-auto lg:h-20" />
+          <img src={amanexLogo} alt="Amanex Solutions" className="h-16 w-auto lg:h-20 bg-transparent p-0 shadow-none" />
         </Link>
 
         {/* Desktop Navigation */}
