@@ -46,7 +46,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center">
-              <img src={amanexLogo} alt="Amanex Solutions" className="h-20 w-auto lg:h-24" />
+              <img src={amanexLogo} alt="Amanex Solutions" className="h-24 w-auto lg:h-32" />
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/70">
               Transforming enterprises through technology excellence and innovation.
