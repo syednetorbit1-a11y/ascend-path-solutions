@@ -145,7 +145,7 @@ export function Footer() {
         <div className="mt-16 border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-primary-foreground/60">
-              © {new Date().getFullYear()} Amanex Consulting. All rights reserved.
+              © {new Date().getFullYear()} Amanex Solutions. All rights reserved.
             </p>
             <p className="text-sm text-primary-foreground/60">
               Built with trust, driven by innovation.

@@ -24,7 +24,7 @@
     --muted: 210 20% 94%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 168 65% 40%;
+    --accent: 210 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,19 +32,19 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 168 65% 40%;
+    --ring: 210 85% 45%;
 
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --teal: 168 65% 40%;
-    --teal-light: 168 60% 50%;
-    --teal-dark: 168 70% 30%;
+    --blue: 210 85% 45%;
+    --blue-light: 210 80% 55%;
+    --blue-dark: 210 90% 35%;
 
     /* Backwards-compatible tokens (used by button variants) */
-    --coral: 168 65% 40%;
-    --coral-light: 168 60% 50%;
-    --coral-dark: 168 70% 30%;
+    --coral: 210 85% 45%;
+    --coral-light: 210 80% 55%;
+    --coral-dark: 210 90% 35%;
 
     --navy: 222 47% 15%;
     --navy-light: 222 40% 25%;
@@ -54,7 +54,7 @@
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--navy-light)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--teal)) 0%, hsl(var(--teal-light)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--blue)) 0%, hsl(var(--blue-light)) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(210 20% 95%) 100%);
 
     /* Shadows */
@@ -62,7 +62,7 @@
     --shadow-md: 0 4px 6px -1px hsl(var(--navy) / 0.1), 0 2px 4px -2px hsl(var(--navy) / 0.1);
     --shadow-lg: 0 10px 15px -3px hsl(var(--navy) / 0.1), 0 4px 6px -4px hsl(var(--navy) / 0.1);
     --shadow-xl: 0 20px 25px -5px hsl(var(--navy) / 0.1), 0 8px 10px -6px hsl(var(--navy) / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--teal) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--blue) / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -93,7 +93,7 @@
     --muted: 222 40% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 168 65% 40%;
+    --accent: 210 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -101,7 +101,7 @@
 
     --border: 222 40% 17%;
     --input: 222 40% 17%;
-    --ring: 168 65% 40%;
+    --ring: 210 85% 45%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
