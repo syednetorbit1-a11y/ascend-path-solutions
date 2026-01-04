@@ -37,10 +37,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="container-custom flex h-16 items-center justify-between lg:h-20">
+      <nav className="container-custom flex h-24 items-center justify-between lg:h-36">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={amanexLogo} alt="Amanex Solutions" className="h-20 w-auto lg:h-24" />
+          <img src={amanexLogo} alt="Amanex Solutions" className="h-24 w-auto lg:h-32" />
         </Link>
 
         {/* Desktop Navigation */}
