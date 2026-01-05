@@ -1,16 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import amanexLogo from "@/assets/amanex-logo-new.png";
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
 const services = [
@@ -44,107 +36,52 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex lg:items-center lg:gap-1">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent font-display text-sm font-medium text-navy">
-                  What We Do
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[500px] gap-2 p-4 md:grid-cols-2">
-                    {services.map((service) => (
-                      <li key={service.title}>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to={service.href}
-                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 focus:bg-accent/10"
-                          >
-                            <div className="font-display text-sm font-semibold leading-none text-foreground">{service.title}</div>
-                            <p className="mt-1 line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {service.description}
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    ))}
-                    <li className="col-span-2 border-t pt-2">
-                      <NavigationMenuLink asChild>
-                        <Link to="/services" className="block p-2 text-sm font-medium text-accent hover:underline">
-                          View all services →
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent font-display text-sm font-medium text-navy">
-                  Industries
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[300px] gap-1 p-4">
-                    {industries.map((industry) => (
-                      <li key={industry.title}>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to={industry.href}
-                            className="block select-none rounded-md p-3 font-display text-sm font-medium leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent focus:bg-accent/10"
-                          >
-                            {industry.title}
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    ))}
-                    <li className="border-t pt-2">
-                      <NavigationMenuLink asChild>
-                        <Link to="/industries" className="block p-2 text-sm font-medium text-accent hover:underline">
-                          View all industries →
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link
-                  to="/insights"
-                  className={cn(
-                    "block px-4 py-2 font-display text-sm font-medium transition-colors hover:text-accent",
-                    isActive("/insights") ? "text-accent" : "text-navy"
-                  )}
-                >
-                  Insights
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link
-                  to="/careers"
-                  className={cn(
-                    "block px-4 py-2 font-display text-sm font-medium transition-colors hover:text-accent",
-                    isActive("/careers") ? "text-accent" : "text-navy"
-                  )}
-                >
-                  Careers
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link
-                  to="/about"
-                  className={cn(
-                    "block px-4 py-2 font-display text-sm font-medium transition-colors hover:text-accent",
-                    isActive("/about") ? "text-accent" : "text-navy"
-                  )}
-                >
-                  About
-                </Link>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+        <div className="hidden lg:flex lg:items-center lg:gap-6">
+          <Link
+            to="/services"
+            className={cn(
+              "font-display text-sm font-semibold transition-colors hover:text-accent",
+              isActive("/services") ? "text-accent" : "text-[#2d2d5a]"
+            )}
+          >
+            What We Do
+          </Link>
+          <Link
+            to="/industries"
+            className={cn(
+              "font-display text-sm font-semibold transition-colors hover:text-accent",
+              isActive("/industries") ? "text-accent" : "text-[#2d2d5a]"
+            )}
+          >
+            Industries
+          </Link>
+          <Link
+            to="/insights"
+            className={cn(
+              "font-display text-sm font-semibold transition-colors hover:text-accent",
+              isActive("/insights") ? "text-accent" : "text-[#2d2d5a]"
+            )}
+          >
+            Insights
+          </Link>
+          <Link
+            to="/careers"
+            className={cn(
+              "font-display text-sm font-semibold transition-colors hover:text-accent",
+              isActive("/careers") ? "text-accent" : "text-[#2d2d5a]"
+            )}
+          >
+            Careers
+          </Link>
+          <Link
+            to="/about"
+            className={cn(
+              "font-display text-sm font-semibold transition-colors hover:text-accent",
+              isActive("/about") ? "text-accent" : "text-[#2d2d5a]"
+            )}
+          >
+            About
+          </Link>
         </div>
 
         {/* CTA Button */}
