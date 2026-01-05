@@ -48,7 +48,7 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent font-display text-sm font-medium">
+                <NavigationMenuTrigger className="bg-transparent font-display text-sm font-medium text-navy">
                   What We Do
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -80,7 +80,7 @@ export function Header() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent font-display text-sm font-medium">
+                <NavigationMenuTrigger className="bg-transparent font-display text-sm font-medium text-navy">
                   Industries
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -113,7 +113,7 @@ export function Header() {
                   to="/insights"
                   className={cn(
                     "block px-4 py-2 font-display text-sm font-medium transition-colors hover:text-accent",
-                    isActive("/insights") ? "text-accent" : "text-foreground"
+                    isActive("/insights") ? "text-accent" : "text-navy"
                   )}
                 >
                   Insights
@@ -125,7 +125,7 @@ export function Header() {
                   to="/careers"
                   className={cn(
                     "block px-4 py-2 font-display text-sm font-medium transition-colors hover:text-accent",
-                    isActive("/careers") ? "text-accent" : "text-foreground"
+                    isActive("/careers") ? "text-accent" : "text-navy"
                   )}
                 >
                   Careers
@@ -137,7 +137,7 @@ export function Header() {
                   to="/about"
                   className={cn(
                     "block px-4 py-2 font-display text-sm font-medium transition-colors hover:text-accent",
-                    isActive("/about") ? "text-accent" : "text-foreground"
+                    isActive("/about") ? "text-accent" : "text-navy"
                   )}
                 >
                   About
